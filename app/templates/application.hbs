@@ -1,5 +1,27 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<h4>Original list</h4> 
+{{numbers}}
 
-{{outlet}}
+<br>
+<br>
+
+Prime
+<TheComponent 
+	@list={{numbers}}
+	@btnAction={{prime}}
+/>
+
+<br>
+<br>
+Odd
+<TheComponent 
+	@list={{numbers}}
+	@btnAction={{odd}}
+/>
+
+<br>
+<br>
+Pow
+<TheComponent 
+	@list={{numbers}}
+	@btnAction={{pow}}
+/>
