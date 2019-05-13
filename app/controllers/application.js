@@ -8,18 +8,20 @@ export default class ApplicationController extends Controller {
 	@action
 	prime (n) {
 		for (let i = 2; i < n; i++) {
+			console.log(n)
 			if (n % i === 0)
 				return false;
 		}
-		return true;
+		if (n > 1)
+			return true;
+		return false
 	}
 
 	@action
 	odd (n) {
 		if (n % 2 === 0)
 			return false;
-		else
-			return true;
+		return true;
 	}
 
 	@action
